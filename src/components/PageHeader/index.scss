@@ -1,0 +1,47 @@
+.page-header {
+  font-size: 14px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+
+  .page-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
+  }
+
+  .page-logo img {
+    margin-right: 40px;
+    height: 40px;
+  }
+
+  .page-nav {
+    display: flex;
+    &,
+    li {
+      margin: 0;
+      list-style: none;
+    }
+    li {
+      cursor: pointer;
+      padding: 33px 26px 22px;
+      color: #666;
+      transition: none ease-out 0.3s;
+      transition-property: color, background-color;
+      &:hover {
+        color: #fff;
+        background-color: #34c9fb;
+      }
+      &.active {
+        color: #fff;
+        background-color: #206bd1;
+      }
+    }
+  }
+}
+
+.page-logo {
+}
+
+.page-nav {
+}

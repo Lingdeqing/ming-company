@@ -1,0 +1,51 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 720px;
+  .banner-images {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform ease-out 0.3s;
+    .banner-image {
+      flex: none;
+      width: 100vw;
+      height: 720px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .banner-dots {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    .banner-dot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+      &::before {
+        content: "";
+        height: 6px;
+        width: 6px;
+        background: rgba(0, 0, 0, 0.3);
+        display: block;
+        border-radius: 100%;
+      }
+      &.active {
+        background: rgba(0, 0, 0, 0.21);
+
+        &::before {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
