@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./index.scss";
+import moduleCss from "./index.module.scss";
 
 export default class extends Component {
   render() {
     return (
-      <div className="page-header">
-        <div className="page-center">
-          <div className="page-logo">
+      <div className={moduleCss["page-header"]}>
+        <div className={moduleCss["page-center"]}>
+          <div className={moduleCss["page-logo"]}>
             <Link to="/">
               <img
                 src="//resources.jsmo.xin/templates/upload/1164/201611/1479704672537.png"
@@ -15,8 +15,8 @@ export default class extends Component {
               />
             </Link>
           </div>
-          <ul className="page-nav">
-            <li className="active">
+          <ul className={moduleCss["page-nav"]}>
+            <li className={moduleCss["active"]}>
               <Link to="/">首页</Link>
             </li>
             <li>

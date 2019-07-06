@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
+import "animate.css";
 import "./App.scss";
 import PageHeader from "./components/PageHeader";
 import Index from "./pages/Index";
